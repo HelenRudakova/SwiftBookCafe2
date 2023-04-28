@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_72" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,26 +15,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SBC_logotext" translatesAutoresizingMaskIntoConstraints="NO" id="H7N-Q1-gEd">
-                                <rect key="frame" x="16" y="-2.6666666666666856" width="398" height="937.33333333333348"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SBC_logo600x600" translatesAutoresizingMaskIntoConstraints="NO" id="H7N-Q1-gEd">
+                                <rect key="frame" x="16" y="59" width="398" height="250"/>
                                 <color key="backgroundColor" red="0.99215686319999996" green="0.94901967050000002" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="aUw-vK-Mnw"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swiftbook Cafe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXB-b5-Aab">
+                                <rect key="frame" x="16" y="329" width="398" height="69.666666666666686"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="55"/>
+                                <color key="textColor" red="0.47058823529999999" green="0.1529411765" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99215686319999996" green="0.94901967050000002" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rXB-b5-Aab" secondAttribute="trailing" constant="16" id="9Uc-47-BsL"/>
                             <constraint firstItem="H7N-Q1-gEd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Jml-FG-xvX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H7N-Q1-gEd" secondAttribute="trailing" constant="16" id="RvW-ZW-a9p"/>
-                            <constraint firstItem="H7N-Q1-gEd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rsJ-G0-33O"/>
+                            <constraint firstItem="rXB-b5-Aab" firstAttribute="top" secondItem="H7N-Q1-gEd" secondAttribute="bottom" constant="20" id="fvn-35-XiI"/>
+                            <constraint firstItem="H7N-Q1-gEd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kYd-Ij-Vuf"/>
+                            <constraint firstItem="rXB-b5-Aab" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nI5-8X-J98"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+            <point key="canvasLocation" x="51.627906976744185" y="374.03433476394855"/>
         </scene>
     </scenes>
     <resources>
-        <image name="SBC_logotext" width="937" height="937"/>
+        <image name="SBC_logo600x600" width="600" height="600"/>
     </resources>
 </document>

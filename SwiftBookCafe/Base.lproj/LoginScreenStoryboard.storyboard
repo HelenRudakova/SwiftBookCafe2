@@ -16,19 +16,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aC4-6c-LOO">
-                                <rect key="frame" x="16" y="79" width="361" height="250"/>
+                                <rect key="frame" x="16" y="59" width="361" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="QZd-Ow-ROi"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать в Swiftbook Cafe! Чтобы совершить заказ введите своё имя и номер вашего столика в поля ниже." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIP-LE-v5B">
-                                <rect key="frame" x="16" y="349" width="361" height="59.333333333333314"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <rect key="frame" x="16" y="309" width="361" height="58.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
                                 <color key="textColor" red="0.47058823529999999" green="0.1529411765" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Gtj-ZZ-SNq">
-                                <rect key="frame" x="16" y="428.33333333333331" width="361" height="34"/>
+                                <rect key="frame" x="16" y="387.66666666666669" width="361" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваше имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDL-rp-rfm">
                                         <rect key="frame" x="0.0" y="0.0" width="243.33333333333334" height="34"/>
@@ -43,10 +43,14 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPp-YM-qNr">
-                                <rect key="frame" x="106.66666666666669" y="482.33333333333331" width="180" height="34.333333333333314"/>
+                                <rect key="frame" x="110.66666666666669" y="441.66666666666669" width="172" height="32.666666666666686"/>
+                                <fontDescription key="fontDescription" name="PTSerif-Caption" family="PT Serif Caption" pointSize="12"/>
                                 <color key="tintColor" red="0.47058823529999999" green="0.1529411765" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Начать заказывать!"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Начать заказывать!"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Начать заказывать!">
+                                    <fontDescription key="titleFontDescription" name="PTSerif-Caption" family="PT Serif Caption" pointSize="16"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="goButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iH1-DJ-VL1"/>
                                     <segue destination="bys-Eh-EGf" kind="presentation" modalPresentationStyle="fullScreen" id="Qit-nk-Xz8"/>
@@ -57,8 +61,8 @@
                         <color key="backgroundColor" red="1" green="0.93725490199999995" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aC4-6c-LOO" secondAttribute="trailing" constant="16" id="5UU-b6-f7i"/>
-                            <constraint firstItem="aC4-6c-LOO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="Cpk-PJ-srB"/>
-                            <constraint firstItem="aIP-LE-v5B" firstAttribute="top" secondItem="aC4-6c-LOO" secondAttribute="bottom" constant="20" id="JRr-7v-ZGz"/>
+                            <constraint firstItem="aC4-6c-LOO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Cpk-PJ-srB"/>
+                            <constraint firstItem="aIP-LE-v5B" firstAttribute="top" secondItem="aC4-6c-LOO" secondAttribute="bottom" id="JRr-7v-ZGz"/>
                             <constraint firstItem="CPp-YM-qNr" firstAttribute="top" secondItem="Gtj-ZZ-SNq" secondAttribute="bottom" constant="20" id="LYD-Za-WBN"/>
                             <constraint firstItem="Gtj-ZZ-SNq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="f93-rx-Jwr"/>
                             <constraint firstItem="Gtj-ZZ-SNq" firstAttribute="top" secondItem="aIP-LE-v5B" secondAttribute="bottom" constant="20" id="hYd-ba-n1n"/>
