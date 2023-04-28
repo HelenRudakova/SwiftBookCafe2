@@ -11,7 +11,7 @@
         <!--Главная-->
         <scene sceneID="RHF-mt-rCV">
             <objects>
-                <viewController id="YMo-Uz-FGk" customClass="MainViewController" customModule="SwiftBookCafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YMo-Uz-FGk" customClass="MainSceneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xxq-oe-tUf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
