@@ -47,6 +47,10 @@
                                 <color key="tintColor" red="0.47058823529999999" green="0.1529411765" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Начать заказывать!"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iH1-DJ-VL1"/>
+                                    <segue destination="bys-Eh-EGf" kind="presentation" modalPresentationStyle="fullScreen" id="Qit-nk-Xz8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -66,12 +70,22 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="customerNameTextField" destination="kDL-rp-rfm" id="eow-1J-xRb"/>
                         <outlet property="logo" destination="aC4-6c-LOO" id="K76-8y-g5g"/>
+                        <outlet property="tableTextField" destination="NYr-uO-Dcc" id="yOJ-hr-yML"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-21" y="4"/>
+        </scene>
+        <!--InfoStoryboard-->
+        <scene sceneID="zrI-tI-QuP">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="InfoStoryboard" storyboardName="InfoStoryboard" id="bys-Eh-EGf" userLabel="InfoStoryboard" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVf-Sa-J9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="691" y="-27"/>
         </scene>
     </scenes>
 </document>
