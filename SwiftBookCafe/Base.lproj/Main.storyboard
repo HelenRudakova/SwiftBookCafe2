@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5V2-UR-s1P">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -8,36 +8,72 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftBookCafe" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-103" y="-490"/>
-        </scene>
         <!--Главная-->
         <scene sceneID="RHF-mt-rCV">
             <objects>
-                <viewController id="YMo-Uz-FGk" sceneMemberID="viewController">
+                <viewController id="YMo-Uz-FGk" customClass="MainSceneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xxq-oe-tUf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JuH-Nb-wlV">
+                                <rect key="frame" x="0.0" y="192.66666666666669" width="393" height="576.33333333333326"/>
+                                <color key="backgroundColor" red="1" green="0.95027703050000001" blue="0.8325873613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="1" green="0.95027703050000001" blue="0.8325873613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexColor" red="1" green="0.95027703050000001" blue="0.8325873613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.95027703050000001" blue="0.8325873613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="1" green="0.95027703050000001" blue="0.8325873613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PromotionCell" id="BRl-Kz-szO">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BRl-Kz-szO" id="hyt-5r-tJ1">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="1" green="0.95027703050000001" blue="0.8325873613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.95027703050000001" blue="0.8325873613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YMo-Uz-FGk" id="yDC-eX-5LI"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Pt4-l8-343">
+                                <rect key="frame" x="16" y="99" width="361" height="84.333333333333314"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Swiftbook Cafe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0vO-uu-5im">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="37.666666666666664"/>
+                                        <color key="backgroundColor" red="1" green="0.95027703050000001" blue="0.8325873613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Наши Новинки" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pmz-UX-mbE">
+                                        <rect key="frame" x="0.0" y="52.66666666666665" width="361" height="31.666666666666664"/>
+                                        <color key="backgroundColor" red="1" green="0.95027703050000001" blue="0.8325873613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uhs-6v-eNJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.95027703050000001" blue="0.8325873613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pt4-l8-343" firstAttribute="top" secondItem="uhs-6v-eNJ" secondAttribute="top" constant="40" id="6D2-NF-fD0"/>
+                            <constraint firstItem="JuH-Nb-wlV" firstAttribute="firstBaseline" secondItem="Pt4-l8-343" secondAttribute="baseline" constant="16.333333333333332" symbolType="layoutAnchor" id="CsY-ZU-IiE"/>
+                            <constraint firstItem="uhs-6v-eNJ" firstAttribute="trailing" secondItem="Pt4-l8-343" secondAttribute="trailing" constant="16" id="dd0-fb-wN7"/>
+                            <constraint firstItem="Pt4-l8-343" firstAttribute="leading" secondItem="uhs-6v-eNJ" secondAttribute="leading" constant="16" id="iWH-gh-NMV"/>
+                            <constraint firstItem="JuH-Nb-wlV" firstAttribute="leading" secondItem="uhs-6v-eNJ" secondAttribute="leading" id="nR0-Oa-MvC"/>
+                            <constraint firstItem="JuH-Nb-wlV" firstAttribute="bottom" secondItem="uhs-6v-eNJ" secondAttribute="bottom" id="oMK-zO-n67"/>
+                            <constraint firstItem="JuH-Nb-wlV" firstAttribute="trailing" secondItem="uhs-6v-eNJ" secondAttribute="trailing" id="wJZ-VW-ksj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Главная" image="house" catalog="system" id="BCy-dD-gDT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GlZ-Z8-Nf8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815" y="-1293"/>
+            <point key="canvasLocation" x="814.50381679389307" y="-1293.661971830986"/>
         </scene>
         <!--Меню-->
         <scene sceneID="ftD-2v-Q8F">
@@ -93,6 +129,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5V2-UR-s1P" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u33-hh-BXz">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
