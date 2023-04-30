@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Check Out View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CheckOutStoryboard" id="Y6W-OH-hqX" customClass="CheckOutViewController" customModule="SwiftBookCafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш заказ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adm-lW-N4b">
+                                <rect key="frame" x="16" y="36" width="156.5" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLF-UY-ySa">
+                                <rect key="frame" x="100" y="566" width="175" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SLF-UY-ySa" secondAttribute="height" multiplier="175:41" id="e72-zS-lF8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Заказать">
+                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="orderTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3g4-mK-kv6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итого:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QF-yb-Xlz">
+                                <rect key="frame" x="16" y="493" width="100" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfM-9c-Kbr">
+                                <rect key="frame" x="272" y="489" width="87" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sPK-Dy-YDf">
+                                <rect key="frame" x="16" y="85" width="343" height="383"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SLF-UY-ySa" firstAttribute="top" secondItem="AfM-9c-Kbr" secondAttribute="bottom" constant="32" id="0z7-Ak-dod"/>
+                            <constraint firstItem="sPK-Dy-YDf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="I8u-Qu-Ujh"/>
+                            <constraint firstItem="SLF-UY-ySa" firstAttribute="top" secondItem="sPK-Dy-YDf" secondAttribute="bottom" constant="98" id="IzT-v2-VQ2"/>
+                            <constraint firstItem="sPK-Dy-YDf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="NO8-Rw-Fqs"/>
+                            <constraint firstItem="Adm-lW-N4b" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="U1s-in-PIh"/>
+                            <constraint firstItem="SLF-UY-ySa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="U9n-ce-uaU"/>
+                            <constraint firstItem="SLF-UY-ySa" firstAttribute="top" secondItem="2QF-yb-Xlz" secondAttribute="bottom" constant="32" id="dnx-Kn-vzT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sPK-Dy-YDf" secondAttribute="trailing" constant="16" id="edb-zg-oC0"/>
+                            <constraint firstItem="2QF-yb-Xlz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="fEq-hE-wyS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AfM-9c-Kbr" secondAttribute="trailing" constant="16" id="hCL-gy-9Vu"/>
+                            <constraint firstItem="Adm-lW-N4b" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="iRg-Tg-QOO"/>
+                            <constraint firstItem="sPK-Dy-YDf" firstAttribute="top" secondItem="Adm-lW-N4b" secondAttribute="bottom" constant="8" symbolic="YES" id="lXN-dq-8ls"/>
+                            <constraint firstItem="SLF-UY-ySa" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nhP-Qn-Kzm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="SLF-UY-ySa" secondAttribute="bottom" constant="60" id="tJV-Ba-fLt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SLF-UY-ySa" secondAttribute="trailing" constant="100" id="yjv-aI-Qv5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="grandTotal" destination="AfM-9c-Kbr" id="0zR-Xj-1N1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="3.1484257871064472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
