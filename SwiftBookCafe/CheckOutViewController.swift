@@ -20,6 +20,9 @@ final class CheckOutViewController: UIViewController {
 
     }
     
+    //функция для приема данных из меню
+    
+    
     //нужна функция подсчета стоимости корзины
     
     
@@ -28,6 +31,8 @@ final class CheckOutViewController: UIViewController {
     //функция показывает поп-ап при заказе и очищает корзину
     @IBAction func orderTapped() {
         showAlert(title: "Заказ принят", message: "Спасибо что выбрали нас!")
+        grandTotal.text = "0"
+        //cell = EmptyCollection
     }
     
     
