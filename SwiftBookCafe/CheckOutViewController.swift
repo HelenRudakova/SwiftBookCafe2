@@ -23,8 +23,19 @@ final class CheckOutViewController: UIViewController {
     //нужна функция подсчета стоимости корзины
     
     
-
+    
+    
+    //функция показывает поп-ап при заказе и очищает корзину
     @IBAction func orderTapped() {
+        showAlert(title: "Заказ принят", message: "Спасибо что выбрали нас!")
     }
     
+    
+    //функция показа алерта
+    private func showAlert(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
 }
