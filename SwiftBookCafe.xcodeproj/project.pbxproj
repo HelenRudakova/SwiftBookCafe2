@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DA9AC8829FADD90000354E6 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AC8729FADD90000354E6 /* CheckOutViewController.swift */; };
+		6DA9AC8A29FADE5C000354E6 /* CheckOutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9AC8929FADE5C000354E6 /* CheckOutStoryboard.storyboard */; };
+		F303D5E129FE8E480022E616 /* MenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F303D5E029FE8E480022E616 /* MenuStoryboard.storyboard */; };
+		F303D5E429FE8FD00022E616 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303D5E329FE8FD00022E616 /* MenuTableViewController.swift */; };
+		F303D5E629FE91030022E616 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303D5E529FE91030022E616 /* Menu.swift */; };
+		F303D5E829FE93010022E616 /* MenuDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303D5E729FE93010022E616 /* MenuDetailsViewController.swift */; };
+		F303D5EE29FEB5200022E616 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303D5ED29FEB5200022E616 /* TabBarController.swift */; };
+		F32E4C4829FEC46C0069A25F /* BasketStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32E4C4729FEC46C0069A25F /* BasketStoryboard.storyboard */; };
+		F32E4C5129FEDC740069A25F /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E4C5029FEDC740069A25F /* BasketViewController.swift */; };
 		F34A7FF529F927B000AB3D44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A7FF429F927B000AB3D44 /* AppDelegate.swift */; };
 		F34A7FF729F927B000AB3D44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A7FF629F927B000AB3D44 /* SceneDelegate.swift */; };
 		F34A7FF929F927B000AB3D44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A7FF829F927B000AB3D44 /* ViewController.swift */; };
@@ -16,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6DA9AC8729FADD90000354E6 /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
+		6DA9AC8929FADE5C000354E6 /* CheckOutStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckOutStoryboard.storyboard; sourceTree = "<group>"; };
+		F303D5E029FE8E480022E616 /* MenuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuStoryboard.storyboard; sourceTree = "<group>"; };
+		F303D5E329FE8FD00022E616 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		F303D5E529FE91030022E616 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		F303D5E729FE93010022E616 /* MenuDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailsViewController.swift; sourceTree = "<group>"; };
+		F303D5ED29FEB5200022E616 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F32E4C4729FEC46C0069A25F /* BasketStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasketStoryboard.storyboard; sourceTree = "<group>"; };
+		F32E4C5029FEDC740069A25F /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		F34A7FF129F927B000AB3D44 /* SwiftBookCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBookCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34A7FF429F927B000AB3D44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F34A7FF629F927B000AB3D44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +55,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F303D5E229FE8E860022E616 /* MenuCafe */ = {
+			isa = PBXGroup;
+			children = (
+				F303D5E329FE8FD00022E616 /* MenuTableViewController.swift */,
+				F303D5E729FE93010022E616 /* MenuDetailsViewController.swift */,
+				F303D5E529FE91030022E616 /* Menu.swift */,
+				F303D5E029FE8E480022E616 /* MenuStoryboard.storyboard */,
+			);
+			path = MenuCafe;
+			sourceTree = "<group>";
+		};
+		F32E4C4929FEC4780069A25F /* BasketCafe */ = {
+			isa = PBXGroup;
+			children = (
+				F32E4C4729FEC46C0069A25F /* BasketStoryboard.storyboard */,
+				F32E4C5029FEDC740069A25F /* BasketViewController.swift */,
+			);
+			path = BasketCafe;
+			sourceTree = "<group>";
+		};
 		F34A7FE829F927B000AB3D44 = {
 			isa = PBXGroup;
 			children = (
+				F32E4C4929FEC4780069A25F /* BasketCafe */,
 				F34A7FF329F927B000AB3D44 /* SwiftBookCafe */,
 				F34A7FF229F927B000AB3D44 /* Products */,
 			);
@@ -57,9 +96,13 @@
 			isa = PBXGroup;
 			children = (
 				F34A7FF429F927B000AB3D44 /* AppDelegate.swift */,
+				F303D5E229FE8E860022E616 /* MenuCafe */,
 				F34A7FF629F927B000AB3D44 /* SceneDelegate.swift */,
 				F34A7FF829F927B000AB3D44 /* ViewController.swift */,
+				6DA9AC8729FADD90000354E6 /* CheckOutViewController.swift */,
+				6DA9AC8929FADE5C000354E6 /* CheckOutStoryboard.storyboard */,
 				F34A7FFA29F927B000AB3D44 /* Main.storyboard */,
+				F303D5ED29FEB5200022E616 /* TabBarController.swift */,
 				F34A7FFD29F927B200AB3D44 /* Assets.xcassets */,
 				F34A7FFF29F927B200AB3D44 /* LaunchScreen.storyboard */,
 				F34A800229F927B200AB3D44 /* Info.plist */,
@@ -127,7 +170,10 @@
 			files = (
 				F34A800129F927B200AB3D44 /* LaunchScreen.storyboard in Resources */,
 				F34A7FFE29F927B200AB3D44 /* Assets.xcassets in Resources */,
+				F303D5E129FE8E480022E616 /* MenuStoryboard.storyboard in Resources */,
+				F32E4C4829FEC46C0069A25F /* BasketStoryboard.storyboard in Resources */,
 				F34A7FFC29F927B000AB3D44 /* Main.storyboard in Resources */,
+				6DA9AC8A29FADE5C000354E6 /* CheckOutStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32E4C5129FEDC740069A25F /* BasketViewController.swift in Sources */,
+				F303D5E629FE91030022E616 /* Menu.swift in Sources */,
+				F303D5EE29FEB5200022E616 /* TabBarController.swift in Sources */,
+				6DA9AC8829FADD90000354E6 /* CheckOutViewController.swift in Sources */,
 				F34A7FF929F927B000AB3D44 /* ViewController.swift in Sources */,
+				F303D5E429FE8FD00022E616 /* MenuTableViewController.swift in Sources */,
+				F303D5E829FE93010022E616 /* MenuDetailsViewController.swift in Sources */,
 				F34A7FF529F927B000AB3D44 /* AppDelegate.swift in Sources */,
 				F34A7FF729F927B000AB3D44 /* SceneDelegate.swift in Sources */,
 			);
